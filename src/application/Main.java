@@ -17,7 +17,7 @@ public class Main extends Application {
 			primaryStage.setScene(scene);
 			primaryStage.show();
 			primaryStage.setTitle("Gestion de Pharmacie par ISIKA");
-			primaryStage.getIcons().add(new Image("C:\\Users\\amine\\Desktop\\Doc_Java_Fx\\logo.png"));
+			primaryStage.getIcons().add(new Image("C:\\Users\\amine\\Desktop\\Doc_Java_Fx\\Pharmacie-logo.jpg"));
 		} catch(Exception e) {
 			e.printStackTrace();
 			System.out.println("Oups un problème");
