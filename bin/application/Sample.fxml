@@ -15,7 +15,7 @@
    <bottom>
       <AnchorPane prefHeight="493.0" prefWidth="350.0" styleClass="stylebackground" stylesheets="@application.css" BorderPane.alignment="CENTER">
          <children>
-            <TextField layoutX="164.0" layoutY="75.0" />
+            <TextField fx:id="nomProduit" layoutX="164.0" layoutY="75.0" />
             <Label layoutX="24.0" layoutY="126.0" prefHeight="18.0" prefWidth="98.0" styleClass="styleLabel" text="Prix">
                <font>
                   <Font name="Georgia Bold Italic" size="14.0" />
@@ -26,8 +26,8 @@
                   <Font name="Georgia Bold Italic" size="14.0" />
                </font>
             </Label>
-            <TextField layoutX="164.0" layoutY="123.0" />
-            <TextField layoutX="164.0" layoutY="171.0" />
+            <TextField fx:id="prixProduit" layoutX="164.0" layoutY="123.0" />
+            <TextField fx:id="qteProduit" layoutX="164.0" layoutY="171.0" />
             <Label layoutX="13.0" layoutY="222.0" prefHeight="18.0" prefWidth="138.0" styleClass="styleLabel" text="Pays fabrication">
                <font>
                   <Font name="Georgia Bold Italic" size="14.0" />
@@ -40,7 +40,7 @@
                <font>
                   <Font name="Georgia Bold Italic" size="14.0" />
                </font></Label>
-            <Button layoutX="135.0" layoutY="455.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" text="Ajouter">
+            <Button fx:id="btn" layoutX="129.0" layoutY="446.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="34.0" prefWidth="92.0" text="Ajouter">
                <font>
                   <Font name="Georgia Bold Italic" size="12.0" />
                </font></Button>
