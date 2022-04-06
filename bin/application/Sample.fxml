@@ -40,11 +40,11 @@
                <font>
                   <Font name="Georgia Bold Italic" size="14.0" />
                </font></Label>
-            <Button fx:id="btn" layoutX="129.0" layoutY="446.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="34.0" prefWidth="92.0" text="Ajouter">
+            <Button fx:id="btnAdd" layoutX="194.0" layoutY="446.0" mnemonicParsing="false" onAction="#handleButtonAjoutAction" prefHeight="34.0" prefWidth="92.0" text="Ajouter">
                <font>
                   <Font name="Georgia Bold Italic" size="12.0" />
                </font></Button>
-            <RadioButton layoutX="175.0" layoutY="222.0" mnemonicParsing="false" styleClass="styleLabel" text="France">
+            <RadioButton fx:id="france" layoutX="175.0" layoutY="222.0" mnemonicParsing="false" selected="true" styleClass="styleLabel" text="France">
                <toggleGroup>
                   <ToggleGroup fx:id="ab" />
                </toggleGroup>
@@ -52,7 +52,7 @@
                   <Font name="Georgia Bold Italic" size="12.0" />
                </font>
             </RadioButton>
-            <RadioButton layoutX="262.0" layoutY="222.0" mnemonicParsing="false" styleClass="styleLabel" text="Autre" toggleGroup="$ab">
+            <RadioButton fx:id="autre" layoutX="262.0" layoutY="222.0" mnemonicParsing="false" styleClass="styleLabel" text="Autre" toggleGroup="$ab">
                <font>
                   <Font name="Georgia Bold Italic" size="12.0" />
                </font></RadioButton>
@@ -68,6 +68,11 @@
                   <Font name="Georgia Bold Italic" size="14.0" />
                </font>
             </Label>
+            <Button fx:id="btnList" layoutX="14.0" layoutY="447.0" mnemonicParsing="false" onAction="#handleButtonListAction" prefHeight="32.0" prefWidth="118.0" text="Lister produits">
+               <font>
+                  <Font name="Georgia Bold Italic" size="12.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </bottom>
