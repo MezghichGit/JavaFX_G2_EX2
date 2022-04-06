@@ -13,7 +13,7 @@ public class Main extends Application {
 		try {
 			//BorderPane root = (BorderPane)FXMLLoader.load(getClass().getResource("Sample.fxml"));
 			BorderPane root = (BorderPane)FXMLLoader.load(getClass().getResource("Login.fxml"));
-			Scene scene = new Scene(root,400,520);
+			Scene scene = new Scene(root,300,200);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
