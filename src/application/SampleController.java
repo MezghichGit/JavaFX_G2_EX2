@@ -1,11 +1,16 @@
 package application;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.RadioButton;
@@ -15,7 +20,7 @@ import javafx.scene.control.ToggleGroup;
 
 public class SampleController {
 	
-	ArrayList<Produit> produits = new ArrayList<>();
+	//ArrayList<Produit> produits = new ArrayList<>();
 	
 	
 	@FXML
@@ -61,7 +66,7 @@ public class SampleController {
 			
 			Produit p = new Produit(nomProduit.getText(),prix,qte,temp.getText(),dateFabrication.getValue().toString(),remarques.getText());
 			
-			produits.add(p);
+			Main.list.add(p);
 			
 			/// début partie alert
 			Alert alert = new Alert(AlertType.INFORMATION);
@@ -84,10 +89,25 @@ public class SampleController {
 	
 	
 	@FXML
-	private void handleButtonListAction(ActionEvent e)
+	private void handleButtonListAction(ActionEvent e) throws IOException
 	{
-		System.out.println("Contenu du Stock ....");
-		System.out.println(produits);
+		Stage primaryStage = (Stage) btnAdd.getScene().getWindow();
+		BorderPane layoutAddProduct = (BorderPane)FXMLLoader.load(getClass().getResource("ListProduits.fxml"));
+		Scene sceneList = new Scene(layoutAddProduct,700,400);
+		sceneList.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		primaryStage.setScene(sceneList);
+
+		
+	}
+	
+	@FXML
+	private void handleMenuListAction(ActionEvent e) throws IOException
+	{
+		Stage primaryStage = (Stage) btnAdd.getScene().getWindow();
+		BorderPane layoutAddProduct = (BorderPane)FXMLLoader.load(getClass().getResource("ListProduits.fxml"));
+		Scene sceneList = new Scene(layoutAddProduct,700,400);
+		sceneList.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		primaryStage.setScene(sceneList);
 		
 	}
 }

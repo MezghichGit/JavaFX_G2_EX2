@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -19,6 +22,22 @@
                   <TableColumn fx:id="remarque" prefWidth="235" text="Consignes" />
               </columns>
             </TableView>
+            <MenuBar prefHeight="26.0" prefWidth="350.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Produits">
+                     <items>
+                        <MenuItem mnemonicParsing="false"  text="Liste Produits" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleMenuAddAction" text="Ajouter produit" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Fournisseurs" />
+                  <Menu mnemonicParsing="false" text="Finance">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
          </children>
       </AnchorPane>
    </center>
