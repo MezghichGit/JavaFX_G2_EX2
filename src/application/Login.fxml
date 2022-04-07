@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane styleClass="stylebackground" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
    <center>
       <AnchorPane prefHeight="204.0" prefWidth="263.0" BorderPane.alignment="CENTER">

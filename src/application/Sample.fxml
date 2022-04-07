@@ -16,7 +16,7 @@
 
 <BorderPane styleClass="stylebackground" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
    <bottom>
-      <AnchorPane prefHeight="493.0" prefWidth="350.0" styleClass="stylebackground" stylesheets="@application.css" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="511.0" prefWidth="350.0" styleClass="stylebackground" stylesheets="@application.css" BorderPane.alignment="CENTER">
          <children>
             <TextField fx:id="nomProduit" layoutX="164.0" layoutY="75.0" />
             <Label layoutX="24.0" layoutY="126.0" prefHeight="18.0" prefWidth="98.0" styleClass="styleLabel" text="Prix">
@@ -43,7 +43,7 @@
                <font>
                   <Font name="Georgia Bold Italic" size="14.0" />
                </font></Label>
-            <Button fx:id="btnAdd" layoutX="194.0" layoutY="446.0" mnemonicParsing="false" onAction="#handleButtonAjoutAction" prefHeight="34.0" prefWidth="92.0" text="Ajouter">
+            <Button fx:id="btnAdd" layoutX="129.0" layoutY="462.0" mnemonicParsing="false" onAction="#handleButtonAjoutAction" prefHeight="34.0" prefWidth="92.0" text="Ajouter">
                <font>
                   <Font name="Georgia Bold Italic" size="12.0" />
                </font></Button>
@@ -71,11 +71,6 @@
                   <Font name="Georgia Bold Italic" size="14.0" />
                </font>
             </Label>
-            <Button fx:id="btnList" layoutX="14.0" layoutY="447.0" mnemonicParsing="false" onAction="#handleButtonListAction" prefHeight="32.0" prefWidth="118.0" text="Lister produits">
-               <font>
-                  <Font name="Georgia Bold Italic" size="12.0" />
-               </font>
-            </Button>
             <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="350.0">
               <menus>
                 <Menu mnemonicParsing="false" text="Produits">
