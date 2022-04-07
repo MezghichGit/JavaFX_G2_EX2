@@ -46,15 +46,13 @@ public class ListProduitsController  implements Initializable{
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		
 		nom.setCellValueFactory(new PropertyValueFactory<Produit, String>("nom"));
-		
-		
 		date.setCellValueFactory(new PropertyValueFactory<Produit, String>("date"));
 		pays.setCellValueFactory(new PropertyValueFactory<Produit, String>("pays"));
 		remarque.setCellValueFactory(new PropertyValueFactory<Produit, String>("remarque"));
-		
 		prix.setCellValueFactory(new PropertyValueFactory<Produit, Double>("prix"));
 		qte.setCellValueFactory(new PropertyValueFactory<Produit, Integer>("qte"));
 		
+		//Charger le TableView par Observable List qui contient nos objets Produits
 		tblProduits.setItems(Main.list);
 		
 	}
