@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane styleClass="stylebackground" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ListProduitsController">
+   <center>
+      <AnchorPane prefHeight="314.0" prefWidth="707.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tblProduits" layoutX="26.0" layoutY="64.0" prefHeight="200.0" prefWidth="653.0">
+              <columns>
+                <TableColumn fx:id="nom" prefWidth="75.0" text="Nom" />
+                <TableColumn fx:id="prix" prefWidth="75.0" text="Prix" />
+                  <TableColumn fx:id="qte" prefWidth="75.0" text="Quantité" />
+                  <TableColumn fx:id="pays" prefWidth="75.0" text="Pays" />
+                  <TableColumn fx:id="date" prefWidth="115" text="Date Fabrication" />
+                  <TableColumn fx:id="remarque" prefWidth="235" text="Consignes" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
